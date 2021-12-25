@@ -9,7 +9,7 @@ export default class AuthController {
     return token
   }
 
-  public async update({ auth }: HttpContextContract) {
+  public async destroy({ auth }: HttpContextContract) {
     await auth.logout()
   }
 }
