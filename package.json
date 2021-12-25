@@ -23,6 +23,7 @@
     "youch-terminal": "^2.0.0"
   },
   "dependencies": {
+    "@adonisjs/auth": "^5.1.1",
     "@adonisjs/core": "^5.4.0",
     "@adonisjs/lucid": "^10.0.0",
     "@adonisjs/repl": "^3.1.0",

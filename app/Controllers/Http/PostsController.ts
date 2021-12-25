@@ -4,7 +4,8 @@ import Post from 'App/Models/Post'
 
 export default class PostsController {
   public async index({}: HttpContextContract) {
-    const posts = await Post.all()
+    // const posts = await Post.all() // do último para o primeiro
+    const posts = await Post.query().orderBy('id') // do primeiro para o último
 
     return posts
   }
